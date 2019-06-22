@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Open Meditations`,
-    description: `Simple Meditations Without the Ads or Intros | Join every day for a 10 minute guided meditation to support your daily practice.`,
+    description: `Simple guided meditations without ads or intros. 10 minutes, every day.`,
     author: `Derick Olson`,
   },
   plugins: [
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#6ec7ff`,
         theme_color: `#6ec7ff`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/om-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
