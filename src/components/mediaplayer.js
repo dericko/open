@@ -1,5 +1,7 @@
 import React from "react"
 
+import "./mediaplayer.css"
+
 export default ({
   height = 430,
   width = 600,

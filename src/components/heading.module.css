@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 240px;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin: 40px;
+}
+
+@media only screen and (max-width: 420px) {
+  .container {
+    /* flex-direction: column; */
+  }
+  .image {
+    display: none;
+    width: 240px;
+  }
+  .description {
+    /* font-size: 12pt; */
+    margin: 0 20px 40px;
+  }
+}
