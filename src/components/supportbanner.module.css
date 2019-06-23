@@ -1,0 +1,36 @@
+.link {
+  height: 80px;
+  width: 300px;
+  background: #218cd9;
+  opacity: 0.9;
+  margin: 0 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 420px) {
+  .heading {
+    display: none;
+  }
+  .link {
+    margin-top: 0;
+  }
+  .linkContainer {
+    flex-direction: column;
+  }
+}

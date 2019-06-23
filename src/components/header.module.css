@@ -1,0 +1,9 @@
+.header {
+  background: #218cd9;
+  margin-bottom: 1.45rem;
+  padding: 1.45rem 1.0875rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+

@@ -11,7 +11,8 @@ export default () => (
     <h3 className={styles.description}>
       Simple guided meditations without ads or intros.
       <br />
-      10 minutes, every day.
+      <br />
+      Ten minutes to support your daily practice.
     </h3>
   </div>
 )
