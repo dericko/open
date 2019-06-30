@@ -5,9 +5,12 @@ import Image from "./image"
 
 export default () => (
   <div className={styles.container}>
-    <div className={styles.image}>
+    <a
+      className={styles.image}
+      href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839"
+    >
       <Image />
-    </div>
+    </a>
     <h3 className={styles.description}>
       Simple guided meditations without ads or intros.
       <br />

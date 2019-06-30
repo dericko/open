@@ -5,6 +5,7 @@ import "./mediaplayer.css"
 export default ({ height = 430, width = 600, title = "Recent Episodes" }) => (
   <div
     style={{
+      paddingTop: 20,
       width: "100%",
       height,
       display: "flex",
