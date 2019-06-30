@@ -9,7 +9,7 @@ export default () => (
       className={styles.image}
       href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839"
     >
-      <Image />
+      <Image imageName="omIcon" />
     </a>
     <h3 className={styles.description}>
       Simple guided meditations without ads or intros.

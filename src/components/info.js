@@ -8,11 +8,13 @@ const InfoPage = () => (
       <p>
         <strong>What is Open Meditations?</strong>
       </p>
+      <p>What is Open Meditations?**</p>
       <ul>
         <li>a podcast of 10-minute guided meditations led by Derick Olson</li>
         <li>started among friends and coworkers</li>
         <li>free to use, and free of ads and intros</li>
       </ul>
+
       <p>
         <strong>How do I start?</strong>
       </p>

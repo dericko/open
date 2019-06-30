@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import MediaPlayer from "../components/mediaplayer"
+// import MediaPlayer from "../components/mediaplayer"
 import Heading from "../components/heading"
 import Info from "../components/info"
 import SupportBanner from "../components/supportbanner"
@@ -25,7 +25,7 @@ const IndexPage = () => (
         <Heading />
         <SupportBanner />
         <Info />
-        <MediaPlayer />
+        {/* <MediaPlayer /> */}
       </Layout>
     )}
   />
