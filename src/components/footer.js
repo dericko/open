@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "./image"
+import Image, { APPLE_BANNER } from "./image"
 
 const Footer = () => (
   <footer
@@ -15,7 +15,7 @@ const Footer = () => (
       <a href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839">
         <Image
           style={{ width: 200 }}
-          imageName="appleBanner"
+          imageName={APPLE_BANNER}
           alt="banner to listen on apple podcasts"
         />
       </a>
@@ -24,7 +24,7 @@ const Footer = () => (
     <span role="img" aria-label="Heart">
       ❤️
     </span>
-    in nyc
+    in nyc{" "}
   </footer>
 )
 

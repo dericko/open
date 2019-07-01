@@ -200,8 +200,8 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

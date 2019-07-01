@@ -1,6 +1,6 @@
 import React from "react"
 
-import Image from "./image"
+import Image, { ABOUT_PHOTO } from "./image"
 
 import styles from "./info.module.css"
 
@@ -12,7 +12,7 @@ const InfoPage = () => (
     >
       <Image
         style={{ width: 200, marginBottom: 9, borderRadius: "50%" }}
-        imageName="omPhoto"
+        imageName={ABOUT_PHOTO}
         alt="photo of derick"
       />
       <p>

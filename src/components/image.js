@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import PropTypes from "prop-types"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -12,6 +13,13 @@ import Img from "gatsby-image"
  * - `gatsby-image`: https://gatsby.dev/gatsby-image
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
+
+export const { OM_ICON, APPLE_ICON, APPLE_BANNER, ABOUT_PHOTO } = {
+  OM_ICON: "omIcon",
+  APPLE_ICON: "appleIcon",
+  APPLE_BANNER: "appleBanner",
+  ABOUT_PHOTO: "aboutPhoto",
+}
 
 const Image = ({ imageName, alt, style }) => (
   <StaticQuery
@@ -38,7 +46,7 @@ const Image = ({ imageName, alt, style }) => (
             }
           }
         }
-        omPhoto: file(relativePath: { eq: "om-photo.jpg" }) {
+        aboutPhoto: file(relativePath: { eq: "about-photo.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
@@ -48,8 +56,21 @@ const Image = ({ imageName, alt, style }) => (
       }
     `}
     render={data => {
-      return <Img style={style} alt={alt} fluid={data[imageName].childImageSharp.fluid} />
+      return (
+        <Img
+          style={style}
+          alt={alt}
+          fluid={data[imageName].childImageSharp.fluid}
+        />
+      )
     }}
   />
 )
+
+Image.propTypes = {
+  alt: PropTypes.string.isRequired,
+  imageName: PropTypes.oneOf([OM_ICON, APPLE_ICON, APPLE_BANNER, ABOUT_PHOTO]),
+  style: PropTypes.object,
+}
+
 export default Image

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import Image from "./image"
+import Image, { APPLE_ICON } from "./image"
 
 import styles from "./header.module.css"
 
@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
       className={styles.iconLink}
       href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839"
     >
-      <Image imageName="appleIcon" alt="icon to listen on apple podcasts" />
+      <Image imageName={APPLE_ICON} alt="icon to listen on apple podcasts" />
     </a>
   </header>
 )
