@@ -1,22 +1,20 @@
 import React from "react"
-import Image from "../components/image"
+import Image from "./image"
 
 const Footer = () => (
   <footer
     style={{
       width: "100%",
       textAlign: "center",
-      margin: "9px",
+      marginBottom: 9,
     }}
   >
     <div
       style={{ display: "flex", justifyContent: "center", marginBottom: 18 }}
     >
-      <a
-        style={{ width: 200 }}
-        href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839"
-      >
+      <a href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839">
         <Image
+          style={{ width: 200 }}
           imageName="appleBanner"
           alt="banner to listen on apple podcasts"
         />

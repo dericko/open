@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:800&display=swap");
+
 .header {
+  box-shadow: 0 4px 6px -6px black;
+  color: white;
   background: #218cd9;
   margin-bottom: 1.45rem;
-  padding: 1.45rem 1.0875rem;
+  padding: 1rem 1.0875rem;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -10,8 +14,19 @@
   justify-content: space-between;
 }
 
+.title {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  font-variant-caps: petite-caps;
+}
+
+.title:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 .iconLink {
-  width: 45px;
+  width: 2.5rem;
 }
 
 .iconLink:hover {

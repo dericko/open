@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 // import MediaPlayer from "../components/mediaplayer"
 import Heading from "../components/heading"
 import Info from "../components/info"
+import About from "../components/info-about"
 import SupportBanner from "../components/supportbanner"
 
 const IndexPage = () => (
@@ -25,6 +26,7 @@ const IndexPage = () => (
         <Heading />
         <SupportBanner />
         <Info />
+        <About />
         {/* <MediaPlayer /> */}
       </Layout>
     )}

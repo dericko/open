@@ -13,7 +13,7 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const Image = ({ imageName, alt }) => (
+const Image = ({ imageName, alt, style }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -38,10 +38,17 @@ const Image = ({ imageName, alt }) => (
             }
           }
         }
+        omPhoto: file(relativePath: { eq: "om-photo.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `}
     render={data => {
-      return <Img alt={alt} fluid={data[imageName].childImageSharp.fluid} />
+      return <Img style={style} alt={alt} fluid={data[imageName].childImageSharp.fluid} />
     }}
   />
 )

@@ -43,7 +43,7 @@ const InfoPage = () => (
         <li>
           Depending on their personal history, it’s possible that breath and
           body-focused meditations aren’t right for everyone. You can contact me
-          with any questions.
+          at derick [at] openmeditations [dot] org with any questions.
         </li>
       </ul>
       <p>
@@ -197,8 +197,8 @@ const InfoPage = () => (
             📱
           </span>
           Meditation apps - from Headspace to Calm to Insight Timer, I think
-          apps, like podcasts, are a great place to start. Just choose one
-          and try it out for a month or so to see if it sticks (or subscribe to{" "}
+          apps, like podcasts, are a great place to start. Just choose one and
+          try it out for a month or so to see if it sticks (or subscribe to{" "}
           <a href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839">
             Open Meditations
           </a>{" "}
