@@ -20,10 +20,10 @@ const Header = ({ siteTitle }) => (
       </Link>
     </h1>
     <a
-      style={{ width: 45 }}
+      className={styles.iconLink}
       href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839"
     >
-      <Image imageName="appleIcon" />
+      <Image imageName="appleIcon" alt="icon to listen on apple podcasts" />
     </a>
   </header>
 )

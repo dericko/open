@@ -13,7 +13,7 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const Image = ({ imageName }) => (
+const Image = ({ imageName, alt }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -41,8 +41,7 @@ const Image = ({ imageName }) => (
       }
     `}
     render={data => {
-      console.log(imageName, data, data[imageName])
-      return <Img fluid={data[imageName].childImageSharp.fluid} />
+      return <Img alt={alt} fluid={data[imageName].childImageSharp.fluid} />
     }}
   />
 )

@@ -16,7 +16,10 @@ const Footer = () => (
         style={{ width: 200 }}
         href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839"
       >
-        <Image imageName="appleBanner" />
+        <Image
+          imageName="appleBanner"
+          alt="banner to listen on apple podcasts"
+        />
       </a>
     </div>
     © {new Date().getFullYear()} made with{" "}

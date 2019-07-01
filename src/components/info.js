@@ -8,13 +8,10 @@ const InfoPage = () => (
       <p>
         <strong>What is Open Meditations?</strong>
       </p>
-      <p>What is Open Meditations?**</p>
       <ul>
-        <li>a podcast of 10-minute guided meditations led by Derick Olson</li>
-        <li>started among friends and coworkers</li>
+        <li>a podcast of 10-minute guided meditations</li>
         <li>free to use, and free of ads and intros</li>
       </ul>
-
       <p>
         <strong>How do I start?</strong>
       </p>
@@ -24,23 +21,46 @@ const InfoPage = () => (
           duration of the recording.
         </li>
         <li>
-          Try to sit with an upright, but relaxed spine. (Imagine a string
-          pulling through the crown of the head, then let the string go slack
-          and the spine stack comfortable)
+          Try to sit with an upright, but relaxed spine. (imagine a string
+          pulling the crown of the head, then let the string go slack and feel
+          the spine stacking comfortably)
         </li>
       </ul>
       <p>
-        <strong>One way to start a daily practice:</strong>
+        <strong>Why breath?</strong>
       </p>
       <ul>
         <li>
-          One goal for any habit is to get to the point where feels easier to
-          keep doing than to stop doing (even if it’s sometimes difficult in the
-          moment)
+          We’ll usually use breath as the object of meditation, simply because
+          it’s readily available to almost everyone.
         </li>
-        <li>Choose a specific time (right when you wake up works well)</li>
-        <li>Commit to practicing every day for 20 days (even weekends!)</li>
-        <li>See how you feel on day 20</li>
+        <li>
+          Being conscious of your breath is a useful skill outside of formal
+          meditation. Noticing your breath throughout the day can help you get a
+          sense of your mood (Are you breathing deep or shallow? Are you holding
+          your breath? When you breathe, where does it move in the body?)
+        </li>
+        <li>
+          Depending on their personal history, it’s possible that breath and
+          body-focused meditations aren’t right for everyone. You can contact me
+          with any questions.
+        </li>
+      </ul>
+      <p>
+        <strong>What “tradition” does it belong to?</strong>
+      </p>
+      <ul>
+        <li>
+          These meditations are not affiliated with an organization or group,
+          nor are they specific to any one tradition.
+        </li>
+        <li>
+          They’re a version of what comes when I lead meditations in person.
+        </li>
+        <li>
+          Take a look at the additional resources below to see some of the
+          influences for Open Meditations.
+        </li>
       </ul>
       <p>
         <strong>More tips:</strong>
@@ -74,72 +94,53 @@ const InfoPage = () => (
           savasana at the end of yoga class.
         </li>
         <li>
-          <strong>Ask yourself</strong> “how is my breathing?” a few times a
-          day.
+          <strong>Ask yourself</strong> “how is my breathing right now?” a few
+          times a day.
         </li>
       </ul>
       <p>
-        <strong>Why breath?</strong>
+        <strong>One way to start a daily practice:</strong>
       </p>
       <ul>
         <li>
-          We’ll usually use breath as the object of meditation, simply because
-          it’s readily available to almost everyone.
+          One goal for any habit is to get to the point where it feels easier to
+          keep doing than to stop doing (even if it’s sometimes difficult in the
+          moment)
         </li>
-        <li>
-          Being conscious of your breath is a useful skill outside of formal
-          meditation. Noticing your breath throughout the day can help you get a
-          sense of your mood (Are you breathing deep or shallow? Are you holding
-          your breath? When you breathe, where does it move in the body?)
-        </li>
-        <li>
-          Depending on their personal history, it’s possible that breath and
-          body-focused meditations aren’t right for everyone. You can contact me
-          with any questions.
-        </li>
+        <li>Choose a specific time (right when you wake up works well)</li>
+        <li>Commit to practicing every day for 20 days (even weekends!)</li>
+        <li>See how you feel on day 20.</li>
       </ul>
       <p>
-        <strong>How did it start?</strong>
+        <strong>How did this podcast start?</strong>
       </p>
       <ul>
         <li>
-          At work in SF: I was doing yoga teacher training in San Francisco at
-          YSSF while also working at a startup in the city. I taught hatha yoga
-          in the mornings then spent my day at the office. After bi-weekly
-          company workouts I started leading short breathing exercises.{" "}
+          At work in SF: I was doing yoga teacher training at the{" "}
+          <a href="http://yogasocietysanfrancisco.com/">
+            Yoga Society of San Francisco
+          </a>{" "}
+          while also working at a startup in the city. I taught hatha yoga in
+          the mornings and spent my days at the office. I started leading short
+          breathing exercises to my co-workers before and after company
+          workouts.{" "}
         </li>
         <li>
           At work in NYC: A colleague and I started a daily meditation group in
-          the office. Members of the group took turns sharing recordings they
-          had found. Sometimes I would lead. We had a few that we liked, some
-          free, some paid for through an app. Sometimes the people with the
-          subscriptions missed, so we’d search our phones for something else.
-          Eventually we settle on one or two free recordings that we liked well
-          enough. It was difficult to balance variety with convenience while
-          keeping things simple and accessible. I started leading more often.
-          Someone suggested I record them. These recordings are the beginning of
-          this podcast.
-        </li>
-      </ul>
-      <p>
-        <strong>What “tradition” does it belong to?</strong>
-      </p>
-      <ul>
-        <li>
-          These meditations are not affiliated with an organization or group,
-          nor are they specific to any one tradition.
-        </li>
-        <li>
-          They’re a version of what comes when I lead meditations in person.
-        </li>
-        <li>
-          Take a look at the additional resources below to see some of the
-          influences for Open Meditations.
+          the office. Sometimes I would lead. Other times members of the group
+          shared recordings they had found. We had a few that we liked, some
+          free, some paid apps. When people with paid subscriptions missed,
+          we&#39;d search our phones for alternatives. Eventually we settled on
+          one or two free recordings that we all liked well enough. But it was
+          difficult to balance variety with convenience while keeping things
+          simple and accessible. I started leading more often. Someone suggested
+          I start recording. These recordings were the beginning of this
+          podcast.
         </li>
       </ul>
       <p>
         <strong>
-          Additional resources (unaffiliated — I get $0 if you click)
+          Additional resources (unaffiliated — I don&#39;t get paid for clicks)
         </strong>
       </p>
       <ul>
@@ -149,8 +150,8 @@ const InfoPage = () => (
           </span>
           <a href="http://dhamma.org">dhamma.org</a> - donation-based Vipassana
           meditation courses. These are the “10-day silent retreats” you might
-          have heard of. Many fine these courses to be quite intense, but I
-          think they’re a worthwhile use of time.
+          have heard of. Many find these courses quite intense, but I think
+          they’re a worthwhile use of time.
         </li>
         <li>
           <span role="img" aria-label="house">
@@ -169,7 +170,7 @@ const InfoPage = () => (
           <a href="https://www.donnafarhi.co.nz/product/the-breathing-book/">
             <em>The Breathing Book</em> by Donna Farhi
           </a>
-          . One of my favorite resources for developing a relationship with my
+          . One of my favorite resources for developing a relationship with the
           breath.
         </li>
         <li>
@@ -179,14 +180,15 @@ const InfoPage = () => (
           <a href="https://books.google.com/books/about/Modern_Buddhist_Masters.html?id=8InEkEp5FtEC">
             <em>Living Buddhist Masters</em> by Jack Kornfield
           </a>
-          . A survey of Buddhist traditions in Southeast Asia, a look at the
-          wonderful variety of practices even within a few specific regions and
-          cultures.
+          . A survey of Buddhist traditions in Southeast Asia. Shows the rich
+          variety of practices and techniques even within a few specific regions
+          and cultures.
         </li>
       </ul>
       <p>
         <strong>
-          Useful tools I&#39;ve used (unaffiliated — I get $0 if you click)
+          Useful tools I&#39;ve used (unaffiliated — I don&#39;t get paid for
+          clicks)
         </strong>
       </p>
       <ul>
@@ -195,7 +197,7 @@ const InfoPage = () => (
             📱
           </span>
           Meditation apps - from Headspace to Calm to Insight Timer, I think
-          apps, like podcasts, are a wonderful place to start. Just choose one
+          apps, like podcasts, are a great place to start. Just choose one
           and try it out for a month or so to see if it sticks (or subscribe to{" "}
           <a href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839">
             Open Meditations
@@ -212,7 +214,7 @@ const InfoPage = () => (
           <a href="https://apps.apple.com/us/app/pocket-meditation-timer/id515571863">
             Pocket Meditation Timer.
           </a>{" "}
-          Very simple, no distractions. It’s free!{" "}
+          Very simple, no distractions. It’s free!
         </li>
         <li>
           <span role="img" aria-label="timer">
@@ -221,8 +223,8 @@ const InfoPage = () => (
           <a href="http://cdnkitchen.com/product/tm30-direct-entry-2-alarm-timer/">
             CDN TM30 kitchen timer
           </a>
-          . I like it because you can set it to either beep or vibrate or just
-          count upwards.
+          . A simple kitchen timer. I mostly like it because it has a setting to
+          either beep or vibrate.
         </li>
       </ul>
     </div>

@@ -10,3 +10,11 @@
   justify-content: space-between;
 }
 
+.iconLink {
+  width: 45px;
+}
+
+.iconLink:hover {
+  background-color: #ad4edf;
+  border-radius: 12px;
+}
