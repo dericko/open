@@ -1,4 +1,5 @@
 import React from "react"
+
 import styles from "./supportbanner.module.css"
 
 const Link = ({ cta, text, link }) => (

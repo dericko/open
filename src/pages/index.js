@@ -7,7 +7,8 @@ import SEO from "../components/seo"
 import Heading from "../components/heading"
 import Info from "../components/info"
 import About from "../components/info-about"
-import SupportBanner from "../components/supportbanner"
+// import SupportBanner from "../components/supportbanner"
+import Badges from "../components/badges"
 
 const IndexPage = () => (
   <StaticQuery
@@ -24,7 +25,8 @@ const IndexPage = () => (
       <Layout>
         <SEO title="Home" />
         <Heading />
-        <SupportBanner />
+        <Badges />
+        {/* <SupportBanner /> */}
         <Info />
         <About />
         {/* <MediaPlayer /> */}
