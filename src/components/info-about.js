@@ -8,7 +8,7 @@ const InfoPage = () => (
   <div className={styles.container} style={{ textAlign: "center" }}>
     <div
       className={styles.infoPage}
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "40px 40px 0" }}
     >
       <Image
         style={{ width: 200, marginBottom: 9, borderRadius: "50%" }}
@@ -16,8 +16,7 @@ const InfoPage = () => (
         alt="photo of derick"
       />
       <p>
-        Derick Olson is a writer, educator, and programmer based in New York
-        City.
+        Derick Olson teaches, writes, and programs in New York City.
       </p>
       <p>
         You can reach out to me with any questions or comments at:
