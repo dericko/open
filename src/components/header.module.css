@@ -33,3 +33,22 @@
   background-color: #ad4edf;
   border-radius: 12px;
 }
+
+.miniPlayer {
+  display: none;
+}
+
+@media only screen and (max-width: 420px) {
+  .audioPlayer {
+    display: none;
+  }
+  .miniPlayer {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .title {
+    font-size: 1.9rem;
+  }
+}

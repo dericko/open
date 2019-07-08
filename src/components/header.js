@@ -1,8 +1,8 @@
-import PropTypes from "prop-types"
 import React from "react"
+import PropTypes from "prop-types"
+import ReactAudioPlayer from "react-audio-player"
 
-import Image, { APPLE_ICON } from "./image"
-
+import MiniPlayer from "./miniplayer"
 import styles from "./header.module.css"
 
 const Header = ({ siteTitle }) => (
@@ -13,12 +13,15 @@ const Header = ({ siteTitle }) => (
     >
       {siteTitle}
     </h1>
-    <a
-      className={styles.iconLink}
-      href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839"
-    >
-      <Image imageName={APPLE_ICON} alt="icon to listen on apple podcasts" />
-    </a>
+    <div className={styles.audioPlayer}>
+      <ReactAudioPlayer
+        src="https://mcdn.podbean.com/mf/web/mhx2t3/om-0-introducing-open-meditations.mp3"
+        controls
+      />
+    </div>
+    <div className={styles.miniPlayer}>
+      <MiniPlayer />
+    </div>
   </header>
 )
 

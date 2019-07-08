@@ -14,11 +14,20 @@ import PropTypes from "prop-types"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-export const { OM_ICON, APPLE_ICON, APPLE_BANNER, ABOUT_PHOTO } = {
+export const {
+  OM_ICON,
+  APPLE_ICON,
+  APPLE_BANNER,
+  ABOUT_PHOTO,
+  PLAY_ICON,
+  PAUSE_ICON,
+} = {
   OM_ICON: "omIcon",
   APPLE_ICON: "appleIcon",
   APPLE_BANNER: "appleBanner",
   ABOUT_PHOTO: "aboutPhoto",
+  PLAY_ICON: "playIcon",
+  PAUSE_ICON: "pauseIcon",
 }
 
 const Image = ({ imageName, alt, style }) => (
@@ -53,6 +62,20 @@ const Image = ({ imageName, alt, style }) => (
             }
           }
         }
+        playIcon: file(relativePath: { eq: "play-icon.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        pauseIcon: file(relativePath: { eq: "pause-icon.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `}
     render={data => {
@@ -69,7 +92,14 @@ const Image = ({ imageName, alt, style }) => (
 
 Image.propTypes = {
   alt: PropTypes.string.isRequired,
-  imageName: PropTypes.oneOf([OM_ICON, APPLE_ICON, APPLE_BANNER, ABOUT_PHOTO]),
+  imageName: PropTypes.oneOf([
+    OM_ICON,
+    APPLE_ICON,
+    APPLE_BANNER,
+    ABOUT_PHOTO,
+    PLAY_ICON,
+    PAUSE_ICON,
+  ]),
   style: PropTypes.object,
 }
 
