@@ -5,7 +5,7 @@
   color: white;
   background: #218cd9;
   margin-bottom: 1.45rem;
-  padding: 1rem 1.0875rem;
+  padding: .6rem 1rem .3rem;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -34,16 +34,16 @@
   border-radius: 12px;
 }
 
-.miniPlayer {
-  display: none;
+.audioPlayer {
+  padding-top: 0px;
 }
 
 @media only screen and (max-width: 420px) {
-  .audioPlayer {
-    display: none;
+  .header {
+    flex-direction: column;
   }
-  .miniPlayer {
-    display: block;
+  .audioPlayer {
+    padding-top: .3rem;
   }
 }
 

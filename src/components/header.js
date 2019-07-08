@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import ReactAudioPlayer from "react-audio-player"
 
-import MiniPlayer from "./miniplayer"
+// import MiniPlayer from "./miniplayer"
 import styles from "./header.module.css"
 
 const Header = ({ siteTitle }) => (
@@ -19,9 +19,9 @@ const Header = ({ siteTitle }) => (
         controls
       />
     </div>
-    <div className={styles.miniPlayer}>
+    {/* <div className={styles.miniPlayer}>
       <MiniPlayer />
-    </div>
+    </div> */}
   </header>
 )
 
