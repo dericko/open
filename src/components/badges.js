@@ -2,15 +2,14 @@ import React from "react"
 
 import styles from "./badges.module.css"
 
-const GoogleBadge = ({ className }) => (
+const GoogleBadge = ({ className, dimensions }) => (
   <a
     className={className}
     aria-label="google-podcast"
     href="https://podcasts.google.com/?feed=aHR0cHM6Ly9wb2RjYXN0Lm9wZW5tZWRpdGF0aW9ucy5vcmcvZmVlZC54bWw%3D"
   >
     <svg
-      width="174"
-      height="44"
+      {...dimensions}
       viewBox="0 0 134 34"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -96,15 +95,14 @@ const GoogleBadge = ({ className }) => (
   </a>
 )
 
-const AppleBadge = ({ className }) => (
+const AppleBadge = ({ className, dimensions }) => (
   <a
     className={className}
     aria-label="apple-podcast"
     href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839?uo=4"
   >
     <svg
-      width="174"
-      height="44"
+      {...dimensions}
       enableBackground="new 0 0 164.8566 40"
       viewBox="0 0 164.8566 40"
       xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +162,7 @@ const AppleBadge = ({ className }) => (
   </a>
 )
 
-const SpotifyBadge = ({ className }) => (
+const SpotifyBadge = ({ className, dimensions }) => (
   <a
     className={className}
     aria-label="spotify-podcast"
@@ -172,8 +170,7 @@ const SpotifyBadge = ({ className }) => (
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="174"
-      height="44"
+      {...dimensions}
       viewBox="0 0 660 160"
     >
       <g style={{ fill: "none", strokeWidth: 1, stroke: "none" }}>
@@ -194,12 +191,19 @@ const SpotifyBadge = ({ className }) => (
   </a>
 )
 
-const Badges = () => (
-  <div className={styles.container}>
-    <AppleBadge className={styles.badge} />
-    <GoogleBadge className={styles.badge} />
-    <SpotifyBadge className={styles.badge} />
-  </div>
-)
+const Badges = ({ primaryOnly }) => {
+  const dimensions = primaryOnly
+    ? { width: 225, height: 57 }
+    : { width: 174, height: 44 }
+  return (
+    <div className={styles.container}>
+      <AppleBadge className={styles.badge} dimensions={dimensions} />
+      <GoogleBadge className={styles.badge} dimensions={dimensions} />
+      {!primaryOnly && (
+        <SpotifyBadge className={styles.badge} dimensions={dimensions} />
+      )}
+    </div>
+  )
+}
 
 export default Badges
