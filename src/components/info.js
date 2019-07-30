@@ -196,9 +196,10 @@ const InfoPage = () => (
           <span role="img" aria-label="phone">
             📱
           </span>
-          Meditation apps - from Headspace to Calm to Insight Timer, I think
-          apps, like podcasts, are a great place to start. Just choose one and
-          try it out for a month or so to see if it sticks (or subscribe to{" "}
+          Meditation apps - from Headspace to Calm to Insight Timer (the Waking
+          Up app is excellent 💯). I think apps, like podcasts, are a great
+          place to start. Just choose one and try it out for at least a month to
+          see if it works for you (or listen to{" "}
           <a href="https://podcasts.apple.com/us/podcast/open-meditations/id1469856839">
             Open Meditations
           </a>{" "}
@@ -223,8 +224,8 @@ const InfoPage = () => (
           <a href="http://cdnkitchen.com/product/tm30-direct-entry-2-alarm-timer/">
             CDN TM30 kitchen timer
           </a>
-          . A simple kitchen timer. I mostly like it because it has a setting to
-          either beep or vibrate.
+          . A simple kitchen timer. I mostly like it because you can set it to
+          vibrate instead of beep.
         </li>
       </ul>
     </div>
