@@ -1,5 +1,5 @@
 import React from "react"
-import Badges from "./badges"
+import { Badges } from "./badges"
 
 const Footer = () => (
   <footer

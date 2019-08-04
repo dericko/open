@@ -7,7 +7,7 @@ import Heading from "../components/heading"
 import Info from "../components/info"
 import About from "../components/info-about"
 // import SupportBanner from "../components/supportbanner"
-import Badges from "../components/badges"
+import { Badges } from "../components/badges"
 
 const IndexPage = () => (
   <StaticQuery

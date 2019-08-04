@@ -17,6 +17,7 @@ import PropTypes from "prop-types"
 export const {
   OM_ICON,
   APPLE_ICON,
+  INSTAGRAM_ICON,
   APPLE_BANNER,
   ABOUT_PHOTO,
   PLAY_ICON,
@@ -24,6 +25,7 @@ export const {
 } = {
   OM_ICON: "omIcon",
   APPLE_ICON: "appleIcon",
+  INSTAGRAM_ICON: "instagramIcon",
   APPLE_BANNER: "appleBanner",
   ABOUT_PHOTO: "aboutPhoto",
   PLAY_ICON: "playIcon",
@@ -37,6 +39,13 @@ const Image = ({ imageName, alt, style }) => (
         omIcon: file(relativePath: { eq: "om-icon.png" }) {
           childImageSharp {
             fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        instagramIcon: file(relativePath: { eq: "instagram-icon.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 60) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -95,6 +104,7 @@ Image.propTypes = {
   imageName: PropTypes.oneOf([
     OM_ICON,
     APPLE_ICON,
+    INSTAGRAM_ICON,
     APPLE_BANNER,
     ABOUT_PHOTO,
     PLAY_ICON,

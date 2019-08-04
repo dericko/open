@@ -1,6 +1,7 @@
 import React from "react"
 
 import styles from "./badges.module.css"
+import Image, { INSTAGRAM_ICON } from "./image"
 
 const GoogleBadge = ({ className, dimensions }) => (
   <a
@@ -191,7 +192,32 @@ const SpotifyBadge = ({ className, dimensions }) => (
   </a>
 )
 
-const Badges = ({ primaryOnly }) => {
+export const InstagramBadge = ({ className, dimensions }) => (
+  <a
+    className={className}
+    aria-label="instagram-account"
+    href="https://www.instagram.com/openmeditations"
+    style={{
+      ...dimensions,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      textDecoration: "none",
+      color: "black",
+      backgroundColor: "white",
+      border: "1px solid gray",
+      borderRadius: 10,
+      padding: 10,
+    }}
+  >
+    <div style={{ width: 35, marginRight: 15 }}>
+      <Image imageName={INSTAGRAM_ICON} alt="instagram icon" />
+    </div>
+    <span style={{ fontSize: 18 }}>@openmeditations</span>
+  </a>
+)
+
+export const Badges = ({ primaryOnly }) => {
   const dimensions = primaryOnly
     ? { width: 225, height: 57 }
     : { width: 174, height: 44 }
@@ -205,5 +231,3 @@ const Badges = ({ primaryOnly }) => {
     </div>
   )
 }
-
-export default Badges
