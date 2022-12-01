@@ -26,7 +26,7 @@ const MiniPlayer = () => {
       <ReactAudioPlayer
         ref={el => (audioPlayer.current = el && el.audioEl)}
         onCanPlay={() => setCanPlay(true)}
-        src="https://mcdn.podbean.com/mf/web/mhx2t3/om-0-introducing-open-meditations.mp3"
+        src="https://mcdn.podbean.com/mf/web/2r5w3p/om-2019-astor-place.mp3"
       />
       {canPlay && (
         <div style={{ width: 50 }}>
