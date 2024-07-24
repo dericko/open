@@ -21,7 +21,7 @@ const InfoPage = () => (
         imageName={ABOUT_PHOTO}
         alt="photo of derick"
       />
-      <p>Derick Olson teaches, writes, and programs in New York City.</p>
+      <p>Derick Olson-Chan teaches, writes, and programs in New York City.</p>
       <p>
         You can reach out to me with any questions or comments at:
         <br />
